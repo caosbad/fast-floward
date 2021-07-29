@@ -1,8 +1,21 @@
-# FastFloward | Week 1 | Day 1
+# A Note Before You Start
+
+We cannot wait for you to join this community of builders. Before we kick things off, **please watch our [Welcome Video](https://youtu.be/5xqf8ugzsrc)**, which will give you an overview of what to expect in the Fast Floward bootcamp and two pieces of advice to help guide you through the next three weeks.
+
+# Fast Floward | Week 1 | Day 1
+
+Hello there! My name is Morgan and together with the team at Decentology we'll guide you towards becoming a decentralized application developer during the 3 weeks of FastFloward.
 
 When exploring something new, it’s important to limit oneself in terms of scope. There’s only so much time and an infinite amount of material, so we’ll focus on things that lead towards shipping decentralized applications or DApps the fastest.
 
-When you set out to build any App, one of the first decisions is to pick a platform you'll build on. Same with DApps. We've made this decision for you, our platform of choice is Flow and Cadence. I'll explain why we think this is a good decision to get started.
+To build any App, one of the first decisions is to choose a platform you'll build on. Same with DApps. We've made this decision for you, and our platform of choice is Flow and Cadence. I'll explain why we think this is a good decision to get started.
+
+# Videos
+
+- [Introduction and Flow Programming Environment](https://www.youtube.com/watch?v=3vBKQRi_jf4)
+- [Cadence Syntax and Basic Types](https://www.youtube.com/watch?v=rnZPe076cIU)
+- [Cadence Functions and Composite Types](https://www.youtube.com/watch?v=rTXRKObHrk4)
+- [Playing around with Cadence + Day 1 Quests](https://www.youtube.com/watch?v=gaK4RvtWYKk)
 
 # Flow
 
@@ -81,7 +94,7 @@ I'm going to be using **VS Code** as my code editor, the team at Flow have creat
 flow cadence install-vscode-extension
 ```
 
-Now that we're all set up, we can dig deeper into **Cadence**, the **Flow** smart contract programming language. Going forward, I'll be working in a Linux environment, but everything should work the same in both macOS and Windows.
+Now that we're all set up, we can dig deeper into **Cadence**, the **Flow** smart contract programming language. Going forward, I'll be working in a Linux environment, but everything should  work the same in both macOS and Windows.
 
 # Cadence
 
@@ -278,8 +291,8 @@ The keyword `pub` that preceeds `fun` is an access modifier and it defines *publ
 For example.
 
 ```cadence
-pub fun sayHi(to: String) {
-  log("Hi, ".concat(to))
+pub fun sayHi(to name: String) {
+  log("Hi, ".concat(name))
 }
 pub fun main() {
   sayHi(to: "FastFloward")
@@ -453,7 +466,12 @@ By now, you should start getting ideas for all the ways you could improve on thi
 
 # Quests
 
-1. Write a function that displays a canvas in a frame.
+For day one, we have two quests: `W1Q1` and `W1Q2`. If you need assistance while solving these, feel free to ask questions on Discord in the **burning-questions** channel.
+
+- `W1Q1` – Frame it!
+
+
+Write a function that displays a canvas in a frame.
 
 ```cadence
 pub fun display(canvas: Canvas)
@@ -469,7 +487,9 @@ pub fun display(canvas: Canvas)
 "+-----+"
 ```
 
-2. Create a resource that prints `Picture`s but only once for each unique 5x5 `Canvas`.
+- `W1Q2` – Uniques
+
+Create a resource that prints `Picture`'s but only once for each unique 5x5 `Canvas`.
 
 ```cadence
 pub resource Printer {
