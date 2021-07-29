@@ -90,7 +90,7 @@ pub fun main() {
   destroy letterX
 }
 
- pub fun display(canvas: Canvas) {
+  pub fun display(canvas: Canvas) {
     var lineNum:UInt8 = 0
     var idx: UInt8 = 0
     log("+-----+")
