@@ -57,11 +57,11 @@ function Trade(props) {
 
   const onBuy = (listingIndex) => {
     console.log(listingIndex);
-    // flow.buy(listingIndex);
+    flow.buy(listingIndex);
   };
   const onWithdraw = (listingIndex) => {
     console.log(listingIndex);
-    // flow.withdraw(listingIndex);
+    flow.withdrawListing(listingIndex);
   };
 
   return (

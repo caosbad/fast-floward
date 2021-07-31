@@ -1,4 +1,4 @@
-import LocalArtist from "../LocalArtist/contract.cdc"
+import LocalArtist from 0x401d94e72a8491ec
 import FungibleToken from 0x9a0766d93b6608b7
 import FlowToken from 0x7e60df042a9c0868
 
@@ -40,6 +40,7 @@ pub contract LocalArtistMarket {
     pub fun getListings(): [Listing]
     pub fun sell(picture: @LocalArtist.Picture, seller: Address, price: UFix64)
     pub fun buy(listing listingIndex: Int, with tokenVault: @FlowToken.Vault, buyer: Address)
+    pub fun withdraw(listingIndex: Int, to seller: Address)
   }
 
   pub resource Market: MarketInterface {
