@@ -344,10 +344,7 @@ function Provider(props) {
           import LocalArtist from ${process.env.REACT_APP_ARTIST_CONTRACT_HOST_ACCOUNT}
           import LocalArtistMarket from ${process.env.REACT_APP_ARTIST_CONTRACT_HOST_ACCOUNT}
           import FungibleToken from 0x9a0766d93b6608b7
-<<<<<<< HEAD
-=======
           import FlowToken from 0x7e60df042a9c0868
->>>>>>> upstream/main
 
           // TODO: Complete this transaction by calling LocalArtistMarket.buy().
           transaction(listingIndex: Int) {

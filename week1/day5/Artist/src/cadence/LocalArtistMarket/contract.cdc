@@ -39,13 +39,8 @@ pub contract LocalArtistMarket {
   pub resource interface MarketInterface {
     pub fun getListings(): [Listing]
     pub fun sell(picture: @LocalArtist.Picture, seller: Address, price: UFix64)
-<<<<<<< HEAD
-    pub fun buy(listing listingIndex: Int, with tokenVault: @FlowToken.Vault, buyer: Address)
-    pub fun withdraw(listingIndex: Int, to seller: Address)
-=======
     pub fun withdraw(listingIndex: Int, to seller: Address) 
     pub fun buy(listing listingIndex: Int, with tokenVault: @FungibleToken.Vault, buyer: Address)
->>>>>>> upstream/main
   }
 
   pub resource Market: MarketInterface {

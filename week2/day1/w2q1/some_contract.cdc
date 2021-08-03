@@ -23,6 +23,9 @@ access(all) contract SomeContract {
 
         pub fun structFunc() {
             // Area 1
+            // Variables that can be read: a b c d e.
+            // Variables that can be modified: a b c d e.
+            // Functions that can be accessed: publicFunc and privateFunc contractFunc:
         }
 
         init() {
@@ -38,6 +41,9 @@ access(all) contract SomeContract {
 
         pub fun resourceFunc() {
             // Area 2
+            // Variables that can be read: a b c e.
+            // Variables that can be modified: a e.
+            // Functions that can be accessed: publicFunc and contractFunc: 
         }
 
         init() {
@@ -51,6 +57,9 @@ access(all) contract SomeContract {
 
     pub fun questsAreFun() {
         // Area 3
+        // Variables that can be read: a b c e.
+        // Variables that can be modified: a .
+        // Functions that can be accessed: publicFunc and contractFunc resourceFunc: 
     }
 
     init() {
